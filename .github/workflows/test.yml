@@ -2,7 +2,7 @@ name: Test
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
 
 jobs:
 
@@ -49,8 +49,8 @@ jobs:
         env:
           DATABASE_NAME: postgres
           DATABASE_USER: postgres
-          DATABASE_PASS: postgres
+          DATABASE_PASSWORD: postgres
           DATABASE_HOST: postgres
-          DATABASE_PORT: 5432
-          REDIS_LOCATION: redis://redis:6379/?db=0
-          REDIS_PASSWORD:
+          REDIS_URL: redis://redis:6379/?db=0
+          DEBUG: 1
+          SECRET_KEY: django-insecure-s)h+_#*$hds7489#¤2hv!m3h4&/!#?()#Bhdh82la
