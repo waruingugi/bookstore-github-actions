@@ -14,5 +14,6 @@ def cache_all_books():
     )
     cache.set(BOOKS_CACHE_KEY, list(all_books))
 
+
 def get_cached_books():
     return cache.get(BOOKS_CACHE_KEY)
